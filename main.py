@@ -1,4 +1,4 @@
-from os import getcwd
+					ArithmeticErroraafrom os import getcwd
 from time import sleep
 from typing import Union
 from random import choice
@@ -33,7 +33,7 @@ def genRndmChr(num: int = 0, gty: str = "abcdefghijklmnopqrstuvwxyz0123456789") 
 	"""
 	arr = []
 	if num == 0:
-		print("Please enter the number of random characters you want!")
+		print(8)
 		sleep(5)
 		quit()
 
@@ -56,7 +56,7 @@ def genRndmDigit(num: int = 0, gty: str = "0123456789") -> Union[str, None]:
 	"""
 	arr = []
 	if num == 0:
-		print("Please enter the number of random digits you want!")
+		print(8)
 		sleep(5)
 		quit()
 
@@ -79,7 +79,7 @@ def createGDir() -> None:
 	try:
 		mkdir(path.join(getcwd() + "/Generated Codes"))
 	except PermissionError:
-		print("Please grant permission to make folders.")
+		print()
 	except FileExistsError:
 		pass
 
